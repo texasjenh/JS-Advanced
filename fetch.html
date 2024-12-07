@@ -1,0 +1,11 @@
+<html> 
+<body>
+    <h2>Check the Dev Inspector Console</h2>
+    <script>
+        fetch('https://reqres.in/api/users')
+            .then(response => response.json()) 
+            .then(json => console.log(json)) 
+            .catch(error => console.error(error))
+    </script>
+</body>
+</html>
